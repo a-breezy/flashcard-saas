@@ -34,6 +34,8 @@ export async function POST(req) {
   const checkoutSession = await stripe.checkout.sessions.create(params);
 
   return NextResponse.json(checkoutSession, {
-    status: 200
+    status: 200,
   });
+
+  //! left off in video at 17:35
 }
